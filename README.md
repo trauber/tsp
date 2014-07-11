@@ -1,4 +1,4 @@
 tsp
 ===
 
-Temple Sinai Publicity remind file and ical output, help scripts
+Temple Sinai Publicity remind file and ical output, helper scripts
