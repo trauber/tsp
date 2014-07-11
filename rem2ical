@@ -17,6 +17,7 @@
 BEGIN {
   print "BEGIN:VCALENDAR"
   print "VERSION:2.0"
+  print "NAME: Temple Sinai Publicity"
 }
 
 {
