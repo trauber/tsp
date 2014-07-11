@@ -1,5 +1,5 @@
-# For pasting into gmail web client used with "markdown here" plugin
-google calendar list --cal https://raw.githubusercontent.com/trauber/tsp/master/temple-sinai-publicity.ics --fields when,title --delimiter ";;" |
+# For pasting into gmail web client used with "markdown here" plugin.
+google calendar list --cal "Temple Sinai Publicity" --fields when,title --delimiter ";;" |
 awk '
 BEGIN {
   FS=";;"
