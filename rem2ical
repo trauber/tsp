@@ -19,6 +19,7 @@ BEGIN {
   print "VERSION:2.0"
   print "NAME:Temple Sinai Publicity"
   print "X-WR-CALNAME:Temple Sinai Publicity"
+  print "METHOD:PUBLISH"
 }
 
 {
