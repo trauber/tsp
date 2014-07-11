@@ -1,0 +1,22 @@
+# For pasting into gmail web client used with "markdown here" plugin
+google calendar list --cal https://raw.githubusercontent.com/trauber/tsp/master/temple-sinai-publicity.ics --fields when,title --delimiter ";;" |
+awk '
+BEGIN {
+  FS=";;"
+  print " Date | Event | Writer "
+  print " ---|---|--- "
+}
+{
+  if (NF < 2) { next }
+  time = substr($1,0,6)
+  printf time " | "
+  event = $2
+  writer = $2
+  sub(/- Writer:.*/, "", event)
+  printf event " | "
+  sub(/.*- Writer: */,"", writer)
+  printf writer
+  print ""
+
+}
+'
